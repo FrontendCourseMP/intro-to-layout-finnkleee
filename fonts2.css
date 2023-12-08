@@ -1,0 +1,379 @@
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@import "fonts";
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,regular,600,700);
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body{
+  font-family: Josefin Sans, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.mobile{
+  display: flexbox;
+  width: 375px;
+  background: #FFF;
+  align-items: center;
+  min-height: 100%;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+.hero_saction{
+  width: 375px;
+  height: 1227px;
+  background-image: url(img/Background_Image.png);
+  padding-top: 208px;
+  margin-bottom: 60px;
+}
+.header{
+  width: 343px;
+  height: 40px;
+  background-color: #FFFFFF;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 40px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+}  
+.menu{
+  margin-left: 9px;
+}
+
+.logo{
+  width: 100px;
+  height: 60px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  margin-left: 89px;
+  .logo4{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 24px;
+    padding-right: 11px;
+    padding-bottom: 24px;
+    justify-content: center;
+  }
+}
+.download_button{
+  padding: 12px 6px;
+  margin-left: 48px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  background-color: #5956E9;
+  color:  #FFFFFF;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600; 
+  text-align: center;
+}
+.prew{
+  display: block;
+  padding-left: 34px;
+  padding-top: 30px;
+  margin-left: 16px;
+  background-color: #FFFFFF;
+  width: 323px;
+  height: 318px;
+  position: relative;
+}
+.text_great_app{
+
+  color: #5956E9;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: left;
+  line-height: 37.5px;
+}  
+.text1 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #6C6C72;
+  text-align: left;
+  padding-top: 18px;
+}
+    
+.text_download{
+  color: #232233;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: left;
+  padding-top: 30px;
+  line-height: 30px;
+}
+.imge_teleph{
+  width: 466px;
+  height: 521px;
+  margin-top: 586;
+  margin-left: 55;
+  margin-bottom: 120;
+  
+}
+.download_icon1{
+  padding-top: 18.44px;
+}
+.download_icon2{
+  padding-top: 19.16px;
+}
+.rect6{
+  width: 323px;
+  height: 358px;
+  border: 10px solid #7572FF;
+  margin-left: 36px;
+  margin-top: -338px;
+}
+.imge_teleph1{
+   margin-left: 55px;
+   margin-top: 40px;
+}
+.about_our_app{
+  width: 343px;
+  height: 935px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.about_appp{
+  width: 209px;
+  height: 38px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  color:#232233;
+  margin-left: 67px;
+  margin-bottom: 18px;
+  margin-right: 67px;
+
+}
+.text2{
+  width: 300px;
+  height: 70px;
+  color: #6C6C72;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+}
+
+.text3{
+  width: 266px;
+  height: 49px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6C6C72;
+  margin-left: 61px;
+}
+
+
+.text_design{
+  list-style-type: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  color: #232233;
+  margin-top: 75px;
+  background-color: #ffffff;
+  padding: 18px 16px 10px 19px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 10px;
+}
+.text_creative_design{
+  margin-left: 18px;
+}
+.text_easy_use{
+  list-style-type: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  color: #232233; 
+  background-color: #ffffff;
+  padding: 18px 16px 10px 19px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 10px; 
+}
+.text_easy_to_use{
+  margin-left: 18px; 
+}
+.text_best_exp{
+  list-style-type: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  color: #232233;
+  background-color: #ffffff;
+  padding: 18px 16px 10px 19px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 10px;
+  margin-bottom: 92px;  
+}
+.text_best_user_exp{
+  margin-left: 18px;
+}
+.app_features{
+  background-image: url(./img/Rectangle\ 23.png);
+}
+
+.text_app_features{
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 37.5px;
+  color: #ffffff;
+  margin-top: 60px;
+}
+.text6{
+  width: 300px;
+  height: 70px;  
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 18px;
+
+}
+.footer{
+  background-color: #232233;
+  margin-bottom: 0px;
+  flex: 1 1 auto;
+  padding-left: 16px;
+  padding-bottom: 30px;
+}
+.contact{
+  display: flex;
+  align-items: center;
+}
+.text_about{
+  font-size: 31.25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47.25px;
+  color: #FFFFFF;
+}
+.text21{
+  width: 334px;
+  height: 72px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 1px;
+  margin-bottom: 38px;
+}
+.line{
+  background: #ffffff;
+  width: 1px;
+  height: 20px;
+  margin: 0px 30px;
+}
+.social_icon{
+  display: flex;
+  justify-content: space-between;
+  justify-content: start;
+  margin-bottom: 60px;
+}
+.text_quick_link{
+  font-size: 25px;
+  font-style: normal;
+  line-height: 37.5px;
+  color: #FFFFFF;
+}
+.quick_link{
+  list-style-type: none;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 35px;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+.news_letter_text{
+  font-size: 25px;
+  font-style: normal;
+  line-height: 37.5px;
+  color: #ffffff;
+}
+.sub{
+  width: 298px;
+  height: 48px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 11px;
+}
+.em_adress{
+  margin-right: 16px;
+}
+.your_em_text{
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 17px;
+  padding-right: 187px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color:#6C6C72;
+  margin-top: 46px;
+}
+.send_button{
+  padding: 11px 13.01px;
+  background-color: #5956E9;
+  border-radius: 4px;
+  position: absolute;
+}
+.line1{
+  display: flex;
+  background: #ffffff;
+  width: 343px;
+  height: 1px;
+  margin-bottom: 23px;
+  justify-content: center;
+}
+.copy{
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  align-items: center;
+}
+.c_icon{
+  margin-right: 18px;
+}
