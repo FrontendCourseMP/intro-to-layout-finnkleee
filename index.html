@@ -3,48 +3,74 @@
     <head>
         <meta charset="UTF-8">
         <title>APPOLLY</title>
+        <style>
+            h1 {
+             margin-bottom: -0.67em;
+            }
+            a:link {
+                color: white;
+                text-decoration: none;
+            }
+            a:visited {
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                color: white;
+                text-decoration: none;
+            }
+           </style>
         <link rel="stylesheet" href="./normalize.css"/>
         <link rel="stylesheet" href="fonts2.css" />
     </head>
     <body>
         <div class="mobile">
             <header class="header">
-                <button class="menu">
-                    <img src="./img/menu-line.svg" alt="menu">
-                </button>
-                <button class="logo">
+                <nav class="drop_menu">
+                    <a href="#" class="menu">
+                        <div class="line_menu"></div>
+                        <div class="line_menu"></div>
+                        <div class="line_menu"></div>
+                    </a>
+                    <ul class="menu_content">
+                        <li> <a href="#about_our_app">About</a> </li>
+                        <li> <a href="#app_features">Features</a> </li>    
+                        <li> <a href="#screenshot">Screenshot</a> </li>
+                        <li> <a href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
+                <a href="#main_page" class="logo">
                     <img class= "logo4" src="./img/Logo4 1.png" alt="logotype" />
-                </button>
+                </a>
                 <button class="download_button">
                     DOWNLOAD
                 </button>
             </header>
-            <section class="hero_saction">
-
+            <section id="main_page" class="hero_saction">
                 <div class="prew">
                     <br/>
-                    <p class="text_great_app">
+                    <h1 class="text_great_app">
                         A GREAT APP MAKES YOUR LIFE BETTER
-                    </p>
+                    </h1>
                     <p class="text1">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit
                     </p>
                     <div class="text_download">
                         DOWNLOAD APP NOW
-                        <span >
-                            <img class="download_icon1" src="./img/toppng 1.png" alt="google play">
-                            <img class="download_icon2" src="./img/PngItem_1144050 2.png" alt="app store">
-                        </span>
+                        <div>
+                            <button><img class="download_icon1" src="./img/toppng 1.png" alt="google play"></button>
+                            <button><img class="download_icon2" src="./img/PngItem_1144050 2.png" alt="app store"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="rect6"></div>
                 <br/>   
                 <img class="imge_teleph1" src="./img/Free Ui View Mobile App Mockup 1.png" alt="pic with telephone"/>
             </section>
-            <section class="about_our_app">
-                <p class="about_appp">
+            <section id="about_our_app" class="about_our_app">
+                <h2 class="about_appp">
                     ABOUT OUR APP
-                </p>
+                </h2>
                 <p class="text2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
                 </p>
@@ -52,85 +78,81 @@
                 <ul>
                     <li class="text_design">
                             <img class="point1" src="./img/checkbox-circle-fill.svg" alt="point">
-                        <span class="text_creative_design">  CREATIVE DESIGN</span>
-                        
-                        
+                        <h3 class="text_creative_design">  CREATIVE DESIGN</h3>
                         <p class="text3">
                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                         </p>
                     </li>
                     <li class="text_easy_use">
-                        
-                            <img class="point2" src="./img/checkbox-circle-fill.svg" alt="point">
-                        <span class="text_easy_to_use">EASY TO USE</span>
-                        
+                        <img class="point2" src="./img/checkbox-circle-fill.svg" alt="point">
+                        <h3 class="text_easy_to_use">EASY TO USE</h3>
                         <p class="text3">
                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                         </p>
                     </li>
                     <li class="text_best_exp">
-                            <img class="point3" src="./img/checkbox-circle-fill.svg" alt="point">
-                        <span class="text_best_user_exp">BEST USER EXPERINCE</span>
+                        <img class="point3" src="./img/checkbox-circle-fill.svg" alt="point">
+                        <h3 class="text_best_user_exp">BEST USER EXPERINCE</h3>
                         <p class="text3">
                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                         </p>
                     </li>
                 </ul>    
             </section>
-            <section class="app_features">
-                <p class="text_app_features">
+            <section id="app_features" class="app_features">
+                <h2 class="text_app_features">
                     APP FEATURES
-                </p>
+                </h2>
                 <p class="text6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
                 </p>
-                <ul>
+                <ul class="features">
                     <li class="free_chat">
                         <img class="comment" src="./img/comment.svg" alt="comment">
-                        <p class="text_free_chat">FULL FREE CHAT</p> 
+                        <h3 class="text_free_chat">FULL FREE CHAT</h3> 
                         <p class="text7">
                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                         </p>
                     </li>
                     <li class="unlimiter">
                         <img class="browser" src="./img/browser.svg" alt="browser">
-                        <p class="text_unlimiter">UNLIMITER FEATURES</p>
-                        <p class="text8">
+                        <h3 class="text_unlimiter">UNLIMITER FEATURES</h3>
+                        <p class="text7">
                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                         </p>
                     </li>
                     <li class="awesome_design">
                         <img class="vector" src="./img/vector.svg" alt="vector">
-                        <p class="text_awesome">AWESOME UI DESIGN</p>  
-                        <p class="text9">
+                        <h3 class="text_awesome">AWESOME UI DESIGN</h3>  
+                        <p class="text7">
                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                         </p>
                     </li>
-                    <img class="app" src="./img/App.png" alt="app">
+                    <li><img class="app" src="./img/App.png" alt="app"></li>
                     <li class="version">
                         <img class="cell_phone" src="./img/cell-phone.svg" alt="cell_phone">
-                        <p class="i_a_vers">
+                        <h3 class="i_a_vers">
                             ISO & ANDROID VERSION
-                        </p>
-                        <p class="text10">
+                        </h3>
+                        <p class="text7">
                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                         </p> 
                     </li>
                     <li class="retina_ready">
                         <img class="scanner" src="./img/eye-scanner 1.svg" alt="scanner">
-                        <p class="retina">
+                        <h3 class="retina">
                             RETINA READY GREAPHICS
-                        </p>
-                        <p class="text11">
+                        </h3>
+                        <p class="text7">
                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                         </p> 
                     </li>
                     <li class="support">
-                        <img class="support" src="./img/male-telemarketer.svg" alt="support">
-                        <p>
+                        <img class="support_img" src="./img/male-telemarketer.svg" alt="support">
+                        <h3 class="text_support">
                             24/7 SUPPORT BY REAL PEPOLE
-                        </p>
-                        <p class="text12">
+                        </h3>
+                        <p class="text7">
                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                         </p> 
                     </li>
@@ -138,134 +160,137 @@
             </section>
             <section class="download_app">
                 <div class="text">
-                    <p>
+                    <h2 class="download_app_now">
                         DOWNLOAD APP NOW
-                    </p>
+                    </h2>
                     <p class="text13">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
                     </p>
-                    <span class="download_store">
-                        <img src="./img/toppng 2.png" alt="google play">
-                        <img src="./img/PngItem_1144050 3.png" alt="app store">
-                    </span>
-                    <ul class="download">
-                        <img class="download_icon" src="./img/download-2-fill.svg" alt="download_icon">
-                        <li>59865</li>     
-                        <li>Download</li>
-                    </ul>
-                    <ul class="like">
-                        <img class="like_icon" src="./img/thumb-up-fill.svg" alt="like_icon">
-                        <li>29852</li>
-                        <li>Like</li>
-                    </ul>
-                    <ul class="5_star_rating">
-                        <img class="star_icon" src="./img/star-fill.svg" alt="star_icon">
-                        <li>1500</li>
-                        <li>5 star rating</li>
+                    <div class="download_store">
+                        <button><img class='down_in1' src="./img/toppng 2.png" alt="google play"></button>
+                        <button><img src="./img/PngItem_1144050 3.png" alt="app store"></button>
+                    </div>
+                    <ul class="about_in_num">
+                        <li class="download">
+                            <img class="download_icon" src="./img/download-2-fill.svg" alt="download_icon">
+                            <span class="text14">59865</span>  
+                            <span class="text15">Download</span>
+                        </li>
+                        <li class="like">
+                            <img class="like_icon" src="./img/thumb-up-fill.svg" alt="like_icon">
+                            <span class="text14">29852</span>
+                            <span class="text15">Like</span>
+                        </li>
+                        <li class="five_star_rating">
+                            <img class="star_icon" src="./img/star-fill.svg" alt="star_icon">
+                            <span class="text14">1500</span>
+                            <span class="text15">5 star rating</span>
+                        </li>
                     </ul>
                 </div>
-                <img class="gravity_telephones" src="./img/Gravity-Scene-iPhone-12-Mockup 1.png" alt="gravity_telephones">
+                <img  class="ellipse4" src="./img/Ellipse 4.svg" alt="Ellipse4">
+                <img id="screenshot" class="gravity_telephones" src="./img/Gravity-Scene-iPhone-12-Mockup 1.png" alt="gravity_telephones">
             </section>
             <section class="how_to_use">
-                <p>
+                <h2 class="how_to_use_text">
                     HOW TO USE THE APP PERFECTLY
-                </p>
-                <p class="text14">
+                </h2>
+                <p class="text16">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
                 </p>
-                <div class="video">
-                    <img class="video_image" src="./img/Image.png" alt="video_image">
-                    <img class="video_icon" src="./img/Vodeo Icon.svg" alt="video_icon">
-                </div>
+                
             </section>
+           
+            <button><img class="video_icon" src="./img/Vodeo Icon.svg" alt="video_icon"></button>
+            <img class="video_image" src="./img/Image.svg" alt="video_image">
             <section class="customers">
-                <p>
+                <h2 class="our_happy_cust">
                     OUR HAPPY CUSTOMERS
-                </p>
-                <p class="text15">
+                </h2>
+                <p class="text16">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
                 </p>
                 <ul class="review">
-                    <img class="prof_photo" src="./img/Profile Image.svg" alt="prof_photo">
+                    <li><img class="prof_photo" src="./img/Profile Image.svg" alt="prof_photo"></li>
                     <li class="name">
                         ANN LUBIN
                     </li>
                     <li class="place">
                         CO-FUNDER
                     </li>
-                    <li class="text16">
+                    <li class="text17">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
                     </li>
                 </ul>
+                <img class="slider" src="./img/Slider.svg" alt="slider">
             </section>
             <section class="recent_blog">
-                <p>
+                <h2 class="our_recent_blog">
                     OUR RECENT BLOG
-                </p>
-                <p class="text17">
+                </h2>
+                <p class="text18">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
                 </p>
-                <ul class="blog">
-                    <li class="post1">
+                <ul id="blog" class="blog">
+                    <li class="post">
                         <img class="image_post1" src="./img/post1.png" alt="image_post1">
-                        <p>
+                        <h3 class="post_text">
                             THE SNAP PIXEL: HOW IT WORKS AND HOW TO INSTALL
-                        </p>
-                        <p class="text18">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-                        </p>
-                        <p>
-                            READ MORE
-                        </p>
-                    </li>
-                    <li class="post2">
-                        <img class="image_post2" src="./img/post2.png" alt="image_post2">
-                        <p>
-                            GLOBAL PARTNER SOLUTIONS: A PARTNERSHIP OF INNOVA
-                        </p>
+                        </h3>
                         <p class="text19">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
                         </p>
-                        <p>
+                        <p class="read_more">
                             READ MORE
                         </p>
                     </li>
-                    <li class="post3">
-                        <img class="image_post3" src="./img/post3.png" alt="image_post3">
-                        <p>
-                            2021: AN OPPORTUNITY FOR SNAPCHATTERS TO START FRE
-                        </p>
-                        <p class="text20">
+                    <li class="post">
+                        <img class="image_post2" src="./img/post2.png" alt="image_post2">
+                        <h3 class="post_text">
+                            GLOBAL PARTNER SOLUTIONS: A PARTNERSHIP OF INNOVA
+                        </h3>
+                        <p class="text19">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
                         </p>
-                        <p>
+                        <p class="read_more">
+                            READ MORE
+                        </p>
+                    </li>
+                    <li class="post">
+                        <img class="image_post3" src="./img/post3.png" alt="image_post3">
+                        <h3 class="post_text">
+                            2021: AN OPPORTUNITY FOR SNAPCHATTERS TO START FRE
+                        </h3>
+                        <p class="text19">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                        </p>
+                        <p class="read_more">
                             READ MORE
                         </p>
                     </li>
                 </ul>  
             </section>
+            <ul class="contact">
+                <li>
+                    <img class="email_image" src="./img/Email Icon.svg" alt="email_image">
+                </li>
+                <li class="email">
+                    INFO.DESIGN@GMAIL.COM
+                </li>
+                <li class="line2"></li>
+                <li class="call_icon">
+                    <img style="width: 50px;height: 50px;" class="call_image" src="./img/Call_icon.svg" alt="call_image">
+                </li>
+                <li class="phone">
+                    +880 321 655 9985
+                </li>
+            </ul>
             <footer class="footer">
-                <ul class="contact">
-                    <li class="email_icon">
-                        
-                        <img class="email_image" src="./img/Email Icon.svg" alt="email_image">
-                    </li>
-                    <li>
-                        INFO.DESIGN@GMAIL.COM
-                    </li>
-                    <li class="call_icon">
-                        
-                        <img style="width: 50px;height: 50px;" class="call_image" src="./img/Call_icon.svg" alt="call_image">
-                    </li>
-                    <li>
-                        +880 321 655 9985
-                    </li>
-                </ul>
                 <div class="about">
                     <p class="text_about">
                         LOGO
                     </p>
-                    <p class="text21">
+                    <p class="text20">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
                     </p>
                     <span class="social_icon">
@@ -281,12 +306,15 @@
                 <p class="text_quick_link">
                     QUICK LINK
                 </p>
-                <ul class="quick_link">
-                    <li>About</li>
-                    <li>Features</li>    
-                    <li>Screenshot</li>
-                    <li>Blog</li>
-                </ul>
+                <nav>
+                    <ul class="quick_link">
+                        <li> <a href="#about_our_app">About</a> </li>
+                        <li> <a href="#app_features">Features</a> </li>    
+                        <li> <a href="#screenshot">Screenshot</a> </li>
+                        <li> <a href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
+                    
                 <div class="email_send">
                     <p class="news_letter_text">
                         NEWS LETTER
@@ -296,13 +324,12 @@
                     </p>
                     <div class="em_adress">
                         <form method="post" action="myhandler.php">
-                            <input type="text" name="your_em_text" placeholder="Your email address">
-
-                            
+                            <input type="text" class="your_em_text" placeholder="Your email address">
+                            <button class="send_button">
+                                <img class="send_icon" src="./img/Group.svg" alt="send_icon">
+                            </button>
                         </form>
-                        <button class="send_button">
-                            <img class="send_icon" src="./img/Group.svg" alt="send_icon">
-                        </button>
+
                     </div>
                     <div class="line1"></div>
                 </div>
