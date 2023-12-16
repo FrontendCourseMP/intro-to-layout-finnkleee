@@ -53,33 +53,44 @@ body{
 }
 .mobile{
   display: flexbox;
-  width: 23.4375em;
   background: var(--White, #FFF);
   align-items: center;
   min-height: 100%;
   overflow: hidden;
   flex: 1 1 auto;
 }
-.hero_saction{
-  width: 23.4375em;
-  height: 76.6875em;
-  background-image: url(../img/Background_Image.png);
-  padding-top: 13em;
-  margin-bottom: 3.75em;
+
+@media (min-width: 23.4375em){
+  .main{
+    display: flex;
+  }
 }
-.header{
-  height: 2.5em;
-  background-color: var(--White, #FFF);
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 2.5em;
-  border-radius: 0.1875em;
-  box-shadow: 0 0.0625em 0.625em 0 rgba(0, 0, 0, 0.10);
-  display: inline-flex;
-  align-items: center;
-  position: fixed;
-  z-index: 999;
-} 
+@media (min-width: 23.4375em){
+  .hero_saction{
+    width: 23.4375em;
+    height: 76.6875em;
+    background-image: url(../img/Background_Image.png);
+    background-repeat: no-repeat;
+    padding-top: 13em;
+    margin-bottom: 3.75em;
+  }
+}
+@media(  min-width: 21.4375rem){
+  .header{
+    height: 2.5em;
+    background-color: var(--White, #FFF);
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2.5em;
+    border-radius: 0.1875em;
+    box-shadow: 0 0.0625em 0.625em 0 rgba(0, 0, 0, 0.10);
+    display: inline-flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+  }   
+}
+
 .menu{
   background-color: var(--White, #FFF);
   margin-left: 0.5625em;
@@ -180,6 +191,8 @@ body{
   width: 20.1875em;
   height: 19.875em;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1f;
 }
 .text_great_app{
   color: var(--Royal-blue, #5956E9);
@@ -689,8 +702,11 @@ body{
   margin-left: 1em;
 }
 .our_recent_blog{
+  height: 2.375em;
+  width: 15.44em;
   margin-top: 3.75em;
   margin-left: 4em;
+  margin-right: 3.56em;
   color: var(--Black, #232233);;
   font-size: 1.5625rem;
   font-style: normal;
@@ -791,7 +807,7 @@ body{
 }
 .line2{
   width: 7.3125em;
-  height: 0.25em;
+  height: 0.25кem;
   border:solid var(--Black, #232233); ;
   margin-bottom: 1.875em;
 }
