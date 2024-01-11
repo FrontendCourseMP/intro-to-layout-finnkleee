@@ -5,38 +5,87 @@
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>KanaevaEN</title>
         <link rel="stylesheet" href="./css/normalize.css"/>
-        <link rel="stylesheet" href="./css/fonts_rk2.css" />
+        <link rel="stylesheet" href="./css/fonts_rk2.scss" />
+        <style>
+            a:link {
+                color: #162521;
+                text-decoration: none;
+            }
+            a:visited {
+                color: #162521;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #162521;
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
-        <main class="main">
-            <header class="header">
-                <img src="./img/Neuberger Berman svg.svg" alt="logo" class="logo">
-                <div class="menu">
-                    <a class="products" href="#">Products</a>
-                    <a class="solutions" href="#">Solutions</a>                    
-                </div>
+        <header class="header">
+            <div class="header__wrapper">
+                <a class="header__logo logo">
+                    <img src="./img/Neuberger Berman svg.svg" alt="logo" class="logo__image">
+                </a>
+                <nav class="header__navigation navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link">Products</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link">Solutions</a>
+                        </li>
+                    </ul>
+                </nav>
                 <img src="./img/mi_shopping-cart.svg" alt="cart" class="cart">
                 <img src="./img/mi_log-in.svg" alt="log in" class="log_in">
-            </header>
-        
-            <section class="s1">
-                <img src="./img/unsplash_RUvW1KGD9a4 (1).png" alt="photo" class="photo">
-                <h1 class="nam">Nam molestie pretium nibh</h1>
-                <p class="text1">
-                    Fusce tellus nisl, posuere ut nibh non, efficitur dignissim ligula. Fusce magna nunc, maximus sed dolor eget, lacinia convallis augue. Nullam eget mauris in velit interdum dapibus. Duis sed luctus ex.
-                </p>
-                <h2 class="mauris">Mauris quis turpis</h2>
-                <p class="text2">Nullam ultrices nisl et aliquet placerat. Nunc id massa elit.</p>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__product product">
+                <div class="product__wrapper">
+                    <picture>
+                        <source srcset="/img/unsplash_RUvW1KGD9a4 (1).png" media="(max-width: 1040px)">
+                        <img src="/img/photo.jpg" alt="" class="product__image">
+                    </picture>  
+                    <div class="product__text-wrapper">
+                        <h2 class="product__title">
+                            Nam molestie pretium nibh
+                        </h2>
+                        <p class="product__text">
+                            Fusce tellus nisl, posuere ut nibh non, efficitur dignissim ligula. Fusce magna nunc, maximus sed dolor eget, lacinia convallis augue. Nullam eget mauris in velit interdum dapibus. Duis sed luctus ex.
+                        </p>  
+                    </div>        
+                </div>
             </section>
-
             <footer class="footer">
-                <form action="#" method="post">
-                    <span class="input1">Цвет</span>
-                    <input type="text">
-                    <span class="input2">Телефон</span>
-                    <input type="text">
-                    <button type="submit">Подобрать диван</button>
-                </form>
+                <div class="footer__wrapper">
+                    <form action="" class="footer__callback callback">
+                        <h2 class="callback__title">
+                            Mauris quis turpis
+                        </h2>
+                        <p class="callback__text">
+                            Nullam ultrices nisl et aliquet placerat. Nunc id massa elit.
+                        </p>
+                        <label class="callback__label">
+                            <span class="callback__descriptor">
+                                <span class="sr-only">Введите ваш</span>
+                                Цвет
+                            </span>
+                            <input type="text" name="color" class="callback__input">
+                        </label>
+                        <label class="callback__label">
+                            <span class="callback__descriptor">
+                                <span class="sr-only">Введите ваш</span>
+                                Телефон
+                            </span>
+                            <input type="text" name="phone" class="callback__input">
+                        </label>
+                        <button type="submit" class="callback__button">
+                            Подобрать диван
+                        </button>
+                    </form>
+                </div>
             </footer>
         </main>
     </body>
