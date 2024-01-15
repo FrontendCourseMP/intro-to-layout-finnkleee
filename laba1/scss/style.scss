@@ -1,0 +1,15 @@
+@use "./utils/fonts";
+@use "./utils/normalize";
+@use "./utils/general";
+@use "./utils/variables";
+
+@use "./blocks/header";
+@use "./blocks/hero";
+@use "./blocks/logo";
+@use "./blocks/navigation";
+@use "./blocks/headcontact";
+@use "./blocks/features";
+@use "./blocks/about";
+@use "./blocks/positives";
+@use "./blocks/get-app";
+@use "./blocks/how-to-use";
