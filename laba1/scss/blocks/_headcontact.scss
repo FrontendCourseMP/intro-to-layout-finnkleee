@@ -1,12 +1,13 @@
 
 
-.header__headcontact {
+.headcontact {
   display: none;
 }
 
 @media(min-width: 768px) {
-  .header__headcontact {
+  .headcontact {
     display: flex;
+    flex-direction: row;
     position: absolute;
     top: -2.7rem;
     color: #ffffff;
@@ -34,7 +35,10 @@
 }
 
 @media(min-width: 1440px) {
-  .info__headcontact {
+  .headcontact {
+    display: flex;
     flex: 0 0 57rem;
+    flex-direction: row;
+    list-style-type: none;
   }
 }

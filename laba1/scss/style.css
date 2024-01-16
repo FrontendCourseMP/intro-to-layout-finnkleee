@@ -389,6 +389,7 @@ body {
   background-color: #FFF;
   height: 4rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-radius: 0.3rem;
@@ -646,13 +647,14 @@ body {
     color: #585858;
   }
 }
-.header__headcontact {
+.headcontact {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .header__headcontact {
+  .headcontact {
     display: flex;
+    flex-direction: row;
     position: absolute;
     top: -2.7rem;
     color: #ffffff;
@@ -679,8 +681,11 @@ body {
   }
 }
 @media (min-width: 1440px) {
-  .info__headcontact {
+  .headcontact {
+    display: flex;
     flex: 0 0 57rem;
+    flex-direction: row;
+    list-style-type: none;
   }
 }
 .features {
@@ -695,6 +700,10 @@ body {
   margin: 0 auto;
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.features__list {
+  list-style-type: none;
 }
 
 .features__subtitle {
@@ -981,6 +990,7 @@ body {
 }
 .positives {
   padding-top: 7.5rem;
+  list-style-type: none;
 }
 
 .positives__item {
