@@ -20,35 +20,38 @@
 </head>
 <body>
     <header class="header">
+        <a class="skip-link" href="#main">
+            go to content
+        </a>
         <div class="header__wrapper">
-            <div class="header__headcontact headcontact">
-                <a href="" class="headcontact__link">
-                    <img src="" alt="" class="headcontact__image">
-                    <span class="headcontact__text">Info@youremail.com</span>
+            <div class="header__contact contact">
+                <a href="" class="contact__link">
+                    <img src="../labav2/images/mail-icon.svg" alt="" class="contact__image">
+                    <span class="contact__text">Info@youremail.com</span>
                 </a>
-                <a href="" class="headcontact__link">
-                    <img src="" alt="" class="headcontact__image">
-                    <span class="headcontact__text">(480) 555-0103</span>
+                <a href="" class="contact__link">
+                    <img src="../labav2/images/phone-icon.svg" alt="" class="contact__image">
+                    <span class="contact__text">(480) 555-0103</span>
                 </a>
                 <ul class="headcontact__social social">
                     <li class="social__item">
-                        <a href="" class="social__link">
-                            <img src="" alt="">
+                        <a href="#" class="social__link">
+                            <img src="../labav2/images/social__facebook.svg" alt="">
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="" class="social__link">
-                            <img src="" alt="">
+                        <a href="#" class="social__link">
+                            <img src="../labav2/images/social__instagram.svg" alt="">
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="" class="social__link">
-                            <img src="" alt="">
+                        <a href="#" class="social__link">
+                            <img src="../labav2/images/social__twitter.svg" alt="">
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="" class="social__link">
-                            <img src="" alt="">
+                        <a href="#" class="social__link">
+                            <img src="../labav2/images/social__youtube.svg" alt="">
                         </a>
                     </li>
                 </ul>
@@ -57,33 +60,34 @@
 
             </button>
             <nav class="header__navigation navigation">
-                <a href="" class="navigation__item">
+                <a href="#" class="navigation__item">
                     Home
                 </a>
-                <a href="" class="navigation__item">
+                <a href="#about" class="navigation__item">
                     About
                 </a>
-                <a href="" class="navigation__item">
+                <a href="#features" class="navigation__item">
                     Features
                 </a>
             </nav>
             <a href="" class="header__logo logo">
-                <img src="" alt="" class="logo__img">
+                <img src="../labav2/images/logo.svg" alt="" class="logo__img">
             </a>
             <nav class="header__navigation navigation">
-                <a href="" class="navigation__item">
+                <a href="#how-to-use" class="navigation__item">
                     Screenshot
                 </a>
-                <a href="" class="navigation__item">
+                <a href="#blog" class="navigation__item">
                     Blog
                 </a>
             </nav>
-            <a href="" class="header__download">
+            <a href="#" class="header__download">
                 Download
             </a>
         </div>
     </header>
-    <main class="main">
+    <main class="main" id = "main">
+        <h1 class="visually-hidden">Applly - app that makes your life better</h1>
         <section class="main__hero hero">
             <div class="hero__wrapper">
                 <div class="hero__conteiner">
@@ -100,18 +104,18 @@
                         </h3>
                         <div class="hero__links links">
                             <a href="" class="links__item">
-                                <img src="" alt="">
+                                <img src="../labav2/images/google__play.jpg" alt="">
                             </a>
                             <a href="" class="links__item">
-                                <img src="" alt="">
+                                <img src="../labav2/images/app_store.jpg" alt="">
                             </a>
                         </div>
                     </div>
                 </div>
-                <img src="" alt="" class="hero__image">
+                <img src="../labav2/images/mobile_inf.png" alt="" class="hero__image">
             </div>
         </section>
-        <section class="main__about about">
+        <section class="main__about about" id = "about">
             <div class="about__wrapper">
                 <h2 class="about__title title">
                     About Our App   Download App Now
@@ -120,10 +124,10 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
                 </p>
                 <div class="about__contentent">
-                    <img src="" alt="" class="about__image">
+                    <img src="../labav2/images/about.png" alt="" class="about__image">
                     <ul class="about__positives positives">
                         <li class="positives__item">
-                            <img src="" alt="" class="positives__icon">
+                            <img src="../labav2/images/positives_icon.svg" alt="" class="positives__icon">
                             <h3 class="positives__title title">
                                 Creative design
                             </h3>
@@ -133,7 +137,7 @@
                             </p>
                         </li>
                         <li class="positives__item">
-                            <img src="" alt="" class="positives__icon">
+                            <img src="../labav2/images/positives_icon.svg" alt="" class="positives__icon">
                             <h3 class="positives__title title">
                                 easy to use
                             </h3>
@@ -143,7 +147,7 @@
                             </p>
                         </li>
                         <li class="positives__item">
-                            <img src="" alt="" class="positives__icon">
+                            <img src="../labav2/images/positives_icon.svg" alt="" class="positives__icon">
                             <h3 class="positives__title title">
                                 Best user experince
                             </h3>
@@ -156,7 +160,7 @@
                 </div>
             </div>
         </section>
-        <section class="main__features features">
+        <section class="main__features features" id="features">
             <div class="features__wrapper">
                 <h2 class="features__title title">
                     App features
@@ -166,7 +170,7 @@
                 </p>
                 <ul class="features__list">
                     <li class="features__item">
-                        <img src="" class="features__icon" alt="">
+                        <img src="../labav2/images/features_comment.svg" class="features__icon" alt="">
                         <h3 class="features__subtitle">
                             Full free chat
                         </h3>
@@ -175,7 +179,7 @@
                         </p>
                     </li>
                     <li class="features__item">
-                        <img src="" class="features__icon" alt="">
+                        <img src="../labav2/images//features_unlim.svg" class="features__icon" alt="">
                         <h3 class="features__subtitle">
                             unlimiter features
                         </h3>
@@ -184,17 +188,17 @@
                         </p>
                     </li>
                     <li class="features__item">
-                        <img src="" class="features__icon" alt="">
+                        <img src="../labav2/images/features_design.svg" class="features__icon" alt="">
                         <h3 class="features__subtitle">
                             awsome ui design
                         </h3>
                         <p class="features__item text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
-                        <img src="" class="features__image features__image" alt="">
+                        <img src="../labav2/images/features__img.jpg" class="features__image features__image" alt="">
                     </li>
                     <li class="features__item">
-                        <img src="" class="features__icon" alt="">
+                        <img src="../labav2/images/features_phone.svg" class="features__icon" alt="">
                         <h3 class="features__subtitle">
                             iso & androind version
                         </h3>
@@ -203,7 +207,7 @@
                       </p>
                     </li>
                     <li class="features__item">
-                        <img src="" class="features__icon" alt="">
+                        <img src="../labav2/images/features_scanner.svg" class="features__icon" alt="">
                         <h3 class="features__subtitle">
                             retina ready greaphics
                         </h3>
@@ -212,7 +216,7 @@
                         </p>
                     </li>
                     <li class="features__item">
-                        <img src="" class="features__icon" alt="">
+                        <img src="../labav2/images/features_support.svg" class="features__icon" alt="">
                         <h3 class="features__subtitle">
                             24/7 support by real pepole
                         </h3>
@@ -223,9 +227,10 @@
                   </ul>
             </div>
         </section>
-        <section class="main__get-app get-app">
+        <section class="main__get-app get-app" id="Download">
             <div class="get-app__wrapper">
                 <div class="get-app__content">
+                    <h2 class="visually-hidden">About our app</h2>
                     <h2 class="get-app__title title">
                         Download App Now
                     </h2>
@@ -234,16 +239,16 @@
                     </p>
                     <div class="get-app__links links">
                         <a href="" class="links__item">
-                            <img src="" alt="">
+                            <img src="../labav2/images/down_google-play.svg" alt="">
                         </a>
                         <a href="" class="links__item">
-                            <img src="" alt="">
+                            <img src="../labav2/images/down_app-store.svg" alt="">
                         </a>
                     </div>
                 
                     <ul class="get-app__list">
                         <li class="get-app__item">
-                            <img src="" alt="" class="get-app__icon">
+                            <img src="../labav2/images/down_down.svg" alt="" class="get-app__icon">
                             <p class="get-app__number">
                                 59865
                             </p>
@@ -252,7 +257,7 @@
                             </h3>
                         </li>
                         <li class="get-app__item">
-                            <img src="" alt="" class="get-app__icon">
+                            <img src="../labav2/images/down_like.svg" alt="" class="get-app__icon">
                             <p class="get-app__number">
                                 29852
                             </p>
@@ -261,7 +266,7 @@
                             </h3>
                         </li>
                         <li class="get-app__item">
-                            <img src="" alt="" class="get-app__icon">
+                            <img src="../labav2/images/down_rat.svg" alt="" class="get-app__icon">
                             <p class="get-app__number">
                                 1500
                             </p>
@@ -271,10 +276,10 @@
                         </li>
                     </ul>
                 </div>
-                <img src="" alt="" class="get-app__image">
+                <img src="../labav2/images/down_img.png" alt="" class="get-app__image">
             </div>
         </section>
-        <section class="main__how-to-use how-to-use">
+        <section class="main__how-to-use how-to-use" id="how-to-use">
             <div class="how-to-use__wrapper">
                 <h2 class="how-to-use__title title">
                     how to use the app perfectly
@@ -283,9 +288,9 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
                 </p>
                 <div class="how-to-use__video video">
-                    <img src="" alt="" class="video__image">
+                    <img src="../labav2/images/video_image.png" alt="" class="video__image">
                     <button class="video__play">
-                        <img src="" alt="" class="video__icon">
+                        <img src="../labav2/images/video_play.svg" alt="" class="video__icon">
                     </button>
                 </div>
             </div>
@@ -301,7 +306,7 @@
                 <div class="customers__review review">
                     <div class="rewiev__content">
                         <div class="review__item">
-                            <img src="" alt="" class="review__ava">
+                            <img src="../labav2/images/profile.svg" alt="" class="review__ava">
                             <h3 class="review__name">
                                 Ann Lubin
                             </h3>
@@ -313,7 +318,7 @@
                             </p>
                         </div>
                         <div class="review__item active">
-                            <img src="" alt="" class="review__ava">
+                            <img src="../labav2/images/profile.svg" alt="" class="review__ava">
                             <h3 class="review__name">
                                 Ann Lubin
                             </h3>
@@ -325,7 +330,7 @@
                             </p>
                         </div>
                         <div class="review__item">
-                            <img src="" alt="" class="review__ava">
+                            <img src="../labav2/images/profile.svg" alt="" class="review__ava">
                             <h3 class="review__name">
                                 Ann Lubin
                             </h3>
@@ -339,25 +344,25 @@
                     </div>
                     <div class="review__slider slider">
                         <button class="slider__button slider__button-active">
-                            <img src="" alt="">
+                            <img src="../labav2/images/slider_active.png" alt="">
                         </button>
                         <button class="slider__button">
-                            <img src="" alt="">
+                            <img src="../labav2/images/slider.svg" alt="">
                         </button>
                         <button class="slider__button">
-                            <img src="" alt="">
+                            <img src="../labav2/images/slider.svg" alt="">
                         </button>
                         <button class="slider__button">
-                            <img src="" alt="">
+                            <img src="../labav2/images/slider.svg" alt="">
                         </button>
                         <button class="slider__button">
-                            <img src="" alt="">
+                            <img src="../labav2/images/slider.svg" alt="">
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="main__blog blog">
+        <section class="main__blog blog" id="blog">
             <div class="blog__wrapper">
                 <h2 class="blog__title title">
                     Our recent blog
@@ -367,7 +372,7 @@
                 </p>
                 <ul class="blog__post post">
                     <li class="post__item">
-                        <img src="" alt="" class="post__image">
+                        <img src="../labav2/images/post1.png" alt="" class="post__image">
                         <h3 class="post__title title">
                             The Snap Pixel: How It Works and How to Install
                         </h3>
@@ -381,7 +386,7 @@
                         </a>
                     </li>
                     <li class="post__item">
-                        <img src="" alt="" class="post__image">
+                        <img src="../labav2/images/post2.png" alt="" class="post__image">
                         <h3 class="post__title title">
                             Global Partner Solutions: A Partnership of Innova
                         </h3>
@@ -395,7 +400,7 @@
                         </a>
                     </li>
                     <li class="post__item">
-                        <img src="" alt="" class="post__image">
+                        <img src="../labav2/images/post3.png" alt="" class="post__image">
                         <h3 class="post__title title">
                             2021: An opportunity for Snapchatters to start fre
                         </h3>
@@ -413,11 +418,11 @@
         </section>
         <section class="main__contacts contacts">
             <a href="mailto:info.design@gmail.com" class="contacts__link">
-              <img class="contacts__icon" src="" alt="">
+              <img class="contacts__icon" src="../labav2/images/contacts__email.svg" alt="">
               <span class="contacts__text">info.design@gmail.com</span>
             </a>
             <a href="tel:+8803216559985" class="contacts__link">
-              <img class="contacts__icon" src="" alt="">
+              <img class="contacts__icon" src="../labav2/images/contacts__call.svg" alt="">
               <span class="contacts__text">+880 321 655 9985</span>
             </a>
         </section>
@@ -431,22 +436,22 @@
                     <ul class="social__list">
                         <li class="social__item">
                         <a href="#" class="social__link">
-                            <img src="" alt="facebook">
+                            <img src="../labav2/images/footer_fb.svg" alt="facebook">
                         </a>
                         </li>
                         <li class="social__item">
                         <a href="#" class="social__link">
-                            <img src="" alt="instagram">
+                            <img src="../labav2/images/social__instagram.svg" alt="instagram">
                         </a>
                         </li>
                         <li class="social__item">
                         <a href="#" class="social__link">
-                            <img src="" alt="twitter">
+                            <img src="../labav2/images/social__twitter.svg" alt="twitter">
                         </a>
                         </li>
                         <li class="social__item">
                         <a href="#" class="social__link">
-                            <img src="" alt="youtube">
+                            <img src="../labav2/images/social__youtube.svg" alt="youtube">
                         </a>
                         </li>
                     </ul>
@@ -456,10 +461,10 @@
                       quick link
                     </h3>
                     <ul class="footlinks__list">
-                      <li class="footlinks__item"><a href="" class="links__item">About</a></li>
-                      <li class="footlinks__item"><a href="" class="links__item">Features</a></li>
-                      <li class="footlinks__item"><a href="" class="links__item">Screenshot</a></li>
-                      <li class="footlinks__item"><a href="#" class="links__item">Blog</a></li>
+                      <li class="footlinks__item"><a href="#about" class="links__item">About</a></li>
+                      <li class="footlinks__item"><a href="#features" class="links__item">Features</a></li>
+                      <li class="footlinks__item"><a href="#how-to-use" class="links__item">Screenshot</a></li>
+                      <li class="footlinks__item"><a href="#blog" class="links__item">Blog</a></li>
                     </ul>
                   </div>
                   <div class="footer__news news">
@@ -480,7 +485,7 @@
                     </form>
                   </div>
                   <div class="copyright">
-                    <img class="copyright__img" src="" alt="copyright logo">
+                    <img class="copyright__img" src="../labav2/images/copyright__img.svg" alt="copyright logo">
                     <p class="copyright__text">Copyright 2021 .Ojjomedia. All Right Reserved.</p>
                   </div>
                 </div>
