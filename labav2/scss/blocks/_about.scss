@@ -1,0 +1,181 @@
+@use "../utils/mixins";
+
+.about__wrapper {
+    @include mixins.wrapper-mb;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+}
+
+.about__title {
+    @include mixins.title;
+    font-size: 2.5rem;
+}
+
+.about__text {
+    @include mixins.text;
+    color: var(--gray-paragraph, #6C6C72);
+    text-align: center;
+    margin-top: 18px;
+}
+
+.about__image {
+    display: block;
+    margin: 4rem auto 4rem auto;
+}
+
+
+
+
+@media(min-width: 768px) {
+    .about__wrapper {
+        @include mixins.wrapper-dt;
+        padding-top: 12rem;
+        padding-bottom: 16.2rem;
+    }
+
+    .about__title {
+        @include mixins.title;
+        font-size: 3.125rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .about__text {
+
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+
+
+    .about__content {
+        gap: 6rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__image {
+        display: block;
+        margin: 4rem 0 0 0;
+        flex: 0 1 auto;
+        object-fit: scale-down;
+    }
+
+    .about__text {
+        margin-bottom: 6rem;
+    }
+
+
+}
+
+@media(min-width: 1440px) {
+    .positives__item {
+        height: 31%;
+    }
+
+    .about__image {
+        display: block;
+        margin: 0;
+        flex: 0 1 38.4rem;
+        object-fit: contain;
+    }
+}
+
+---------
+
+
+.positives {
+    margin-top: 7.5rem;
+}
+  
+.positives__item {
+    list-style-type: none;
+    width: 100%;
+    border-radius: 1rem;
+    background: var(--White, #FFF);
+    padding: 1.8rem 1.6rem 1rem 6.1rem;
+    box-shadow: 0rem 0.1rem 1rem 0rem rgba(0, 0, 0, 0.10);
+    margin: 0 auto 2rem auto;
+    position: relative;
+}
+
+
+.positives__title {
+    @include mixins.title;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+.positives__text {
+    @include mixins.text;
+    color: var(--gray-paragraph, #6C6C72);
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+
+.positives__icon {
+    display: block;
+    position: absolute;
+    top: 1.8rem;
+    left: 1.8rem;
+}
+
+@media(min-width: 1440px) {
+    .positives {
+        flex: 1 1 57rem;
+        padding: 0;
+    }
+}
+
+
+
+// @media(min-width: 768px) {
+//     .about__wrapper {
+//         @include mixins.viewport--dt;
+//         padding-top: 120px;
+//         padding-bottom: 162px;
+//     }
+
+//     .about__title {
+//         font-size: 3.125rem;
+//         margin-bottom: 18px;
+//     }
+
+//     .about__text {
+//         max-width: 450px;
+//         margin: 0 auto;
+//     }
+
+
+//     .about__contentent {
+//         gap: 60px;
+//         display: flex;
+//         justify-content: center;
+//     }
+
+//     .about__image {
+//         display: block;
+//         margin: 40px 0 0 0;
+//         flex: 0 1 auto;
+//         object-fit: scale-down;
+//     }
+
+//     .about__text {
+//         margin-bottom: 60px;
+//     }
+
+
+// }
+
+// @media(min-width: 1440px) {
+//     .positives__item {
+//         height: 31%;
+//     }
+
+//     .about__image {
+//         display: block;
+//         margin: 0;
+//         flex: 0 1 384px;
+//         object-fit: contain;
+//     }
+// }
+

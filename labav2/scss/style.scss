@@ -1,5 +1,5 @@
-@use "./utils/fonts";
 @use "./utils/normalize";
+@use "./utils/fonts";
 @use "./utils/general";
 @use "./utils/variables";
 @use "./utils/sr-only";
@@ -8,9 +8,8 @@
 @use "./blocks/hero";
 @use "./blocks/logo";
 @use "./blocks/navigation";
-@use "./blocks/headcont";
+@use "./blocks/headercont";
 @use "./blocks/features";
 @use "./blocks/about";
-@use "./blocks/positives";
 @use "./blocks/get-app";
-@use "./blocks/how-to-use";
+@use "./blocks/how-to-use"
