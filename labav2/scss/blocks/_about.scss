@@ -65,14 +65,15 @@
 }
 
 @media(min-width: 1440px) {
-    .positives__item {
-        height: 31%;
+    .about__wrapper {
+        @include mixins.wrapper-dt;
     }
 
     .about__image {
         display: block;
         margin: 0;
-        flex: 0 1 38.4rem;
+        width: 386px;
+        height: 526px;
         object-fit: contain;
     }
 }
@@ -118,9 +119,19 @@
 }
 
 @media(min-width: 1440px) {
+
     .positives {
         flex: 1 1 57rem;
         padding: 0;
+    }
+
+    .positives__item {
+        height: 29%;
+        margin-bottom: 40px;
+    }
+
+    .positives__item:last-child {
+        margin-bottom: 0;
     }
 }
 

@@ -987,7 +987,7 @@ body {
     border-radius: 7.4rem;
     -o-object-position: center;
        object-position: center;
-    margin-left: 0px;
+    margin-left: 60px;
   }
   .features__item:nth-child(1) {
     width: 100%;
@@ -1108,13 +1108,16 @@ body {
   }
 }
 @media (min-width: 1440px) {
-  .positives__item {
-    height: 31%;
+  .about__wrapper {
+    max-width: 104rem;
+    width: 100%;
+    margin: 0 auto;
   }
   .about__image {
     display: block;
     margin: 0;
-    flex: 0 1 38.4rem;
+    width: 386px;
+    height: 526px;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -1181,6 +1184,13 @@ body {
   .positives {
     flex: 1 1 57rem;
     padding: 0;
+  }
+  .positives__item {
+    height: 29%;
+    margin-bottom: 40px;
+  }
+  .positives__item:last-child {
+    margin-bottom: 0;
   }
 }
 .get-app__wrapper {
@@ -1351,7 +1361,7 @@ body {
     text-transform: uppercase;
   }
   .get-app__image {
-    margin: 0;
+    margin-left: 80px;
     width: 516px;
     height: auto;
     -o-object-fit: contain;
