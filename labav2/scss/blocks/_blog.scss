@@ -10,6 +10,7 @@
     @include mixins.title;
     font-size: 2.5rem;
     margin-bottom: 18px;
+    text-align: center;
 }
   
 .blog__text {
@@ -70,8 +71,7 @@
 
     .blog__wrapper {
         @include mixins.wrapper-dt;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding: 120px 40px;
     }
 
     .blog__title {
@@ -117,11 +117,20 @@
 
 
 @media(min-width: 1440px){
-    .blog__wrapper {
+    .blog{
         @include mixins.wrapper-dt;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0;
+        padding: 0 135px 0;
+    }
+    .blog__wrapper {
+        
+        max-width: 1440px;
+        width: 100%;
         padding-bottom: 200px;
-        width: 1170px;
-        margin: 0 135px;
+        // width: 1170px;
+        // margin: 0 135px;
     }
 
     .blog__post{

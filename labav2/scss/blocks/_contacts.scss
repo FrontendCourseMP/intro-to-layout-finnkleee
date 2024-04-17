@@ -16,9 +16,10 @@
       left: 50%;
       top: 150px;
       transform: translate(-50%);
-      height: 4px;
+      border: 2px solid var(--black);
+    //   height: 4px;
       width: 117px;
-      background: #232233;
+    //   background: #232233;
     }
 }
 
@@ -66,8 +67,10 @@
             left: 314px;
             transform: rotate(-90deg);
             width: 106px;
-            height: 3px;
-            background: #232233;
+            border: 1.5px solid var(--gray-paragraph, #6C6C72);
+            width: 106px;
+            // height: 3px;
+            // background: #232233;
         }
     }
 
@@ -116,8 +119,10 @@
             left: 560px;
             transform: rotate(-90deg);
             width: 117px;
-            height: 4px;
-            background: #232233;
+            border: 2px solid var(--gray-paragraph, #6C6C72);
+            width: 117px;
+            // height: 4px;
+            // background: #232233;
         }
     }
        
