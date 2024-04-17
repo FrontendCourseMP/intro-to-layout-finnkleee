@@ -41,7 +41,7 @@
 .get-app__item {
   width: 96px;
   height: 100px;
-
+  list-style-type: none;
   border-radius: 5px;
   background: var(--Royal-blue, #5956E9);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
@@ -77,7 +77,7 @@
 
 @media(min-width: 768px) {
   .get-app__wrapper {
-    @include mixins.viewport--dt;
+    @include mixins.wrapper-dt;
     display: flex;
     /* gap: 28px; */
     justify-content: space-between;

@@ -13,7 +13,6 @@
     margin-left: 16px;
     width: 100%;
     max-width: 343px;
-    // margin: 0 auto;
     background-color: #FFF;
     display: flex;
     align-items: center;
@@ -62,9 +61,21 @@
     transform: translateX(-50%);
 }
 
+
+@media(min-width: 768px) {
+    .header__wrapper{
+        max-width: 688px;
+        width: 100%;
+        margin-top: 69px; 
+        margin-left: 40px;
+    }
+       
+}
+
+
 @media(min-width: 1440px) {
     .header__wrapper {
-        @include mixins.viewport--dt;
+        @include mixins.wrapper-dt;
         padding: 0;
         height: 60px;
     }

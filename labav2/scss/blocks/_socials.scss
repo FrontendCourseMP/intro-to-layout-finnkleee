@@ -14,7 +14,7 @@
 }
 
 .social__text {
-    @include mixin.text;
+    @include mixins.text;
     color: #fff;
 }
 

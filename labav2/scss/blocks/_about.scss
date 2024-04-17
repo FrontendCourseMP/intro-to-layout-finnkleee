@@ -3,7 +3,6 @@
 .about__wrapper {
     @include mixins.wrapper-mb;
     padding-top: 6rem;
-    padding-bottom: 7rem;
 }
 
 .about__title {
@@ -30,7 +29,6 @@
     .about__wrapper {
         @include mixins.wrapper-dt;
         padding-top: 12rem;
-        padding-bottom: 16.2rem;
     }
 
     .about__title {
@@ -46,10 +44,11 @@
     }
 
 
-    .about__content {
+    .about__contentent {
         gap: 6rem;
         display: flex;
         justify-content: center;
+        margin: 60px 40px 160px 39px;
     }
 
     .about__image {
@@ -62,7 +61,6 @@
     .about__text {
         margin-bottom: 6rem;
     }
-
 
 }
 

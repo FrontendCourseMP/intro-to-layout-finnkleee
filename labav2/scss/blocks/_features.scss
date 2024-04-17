@@ -44,6 +44,7 @@
     box-shadow: 4rem 4rem 10rem 0rem rgba(24, 48, 63, 0.50);
     margin-top: 6rem;
     margin-bottom: 12rem;
+    margin-left: 53.4px;
 }
 
 @media(min-width: 768px) {
@@ -153,9 +154,11 @@
         font-size: 2.5rem;
     }
     .features__image {
-        width: 37.5rem;
-        height: 81.2rem;
+        width: 375px;
+        height: 812px;
         border-radius: 7.4rem;
+        object-position: center;
+        margin-left: 0px;
     }
     .features__item:nth-child(1) {
         width: 100%;
