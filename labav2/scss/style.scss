@@ -1,0 +1,18 @@
+@use "./utils/normalize";
+@use "./utils/fonts";
+@use "./utils/general";
+@use "./utils/variables";
+@use "./utils/sr-only";
+
+@use "./blocks/header";
+@use "./blocks/hero";
+@use "./blocks/navigation";
+@use "./blocks/headercont";
+@use "./blocks/features";
+@use "./blocks/about";
+@use "./blocks/get-app";
+@use "./blocks/how-to-use";
+@use "./blocks/customers";
+@use "./blocks/blog";
+@use "./blocks/contacts";
+@use "./blocks/footer";

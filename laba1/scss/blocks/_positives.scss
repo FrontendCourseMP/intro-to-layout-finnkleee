@@ -1,0 +1,44 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.positives {
+  padding-top: 7.5rem;
+  list-style-type: none;
+}
+
+.positives__item {
+  width: 100%;
+  border-radius: 1rem;
+  background: var(--White, #FFF);
+  padding: 1.8rem 1.6rem 1rem 6.1rem;
+  box-shadow: 0rem 0.1rem 1rem 0rem rgba(0, 0, 0, 0.10);
+  margin: 0 auto 2rem auto;
+  position: relative;
+}
+
+
+.positives__title {
+  @include mixins.title;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  text-align: left;
+}
+
+.positives__text {
+  @include mixins.text;
+  font-size: 1.6rem;
+}
+
+.positives__icon {
+  display: block;
+  position: absolute;
+  top: 1.8rem;
+  left: 1.8rem;
+}
+
+@media(min-width: 1440px) {
+  .positives {
+    flex: 1 1 57rem;
+    padding: 0;
+  }
+}

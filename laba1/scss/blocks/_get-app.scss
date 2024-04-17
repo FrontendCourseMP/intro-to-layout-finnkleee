@@ -1,0 +1,121 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.get-app__wrapper {
+    @include mixins.wrapper-mb;
+    padding-top: 10.3rem;
+    padding-bottom: 6rem;
+    .get-app__content {
+        width: 32.9rem;
+        margin: 0 auto;
+    }
+    .get-app__title {
+        @include mixins.title;
+        color: var(--Black, #232233);
+        font-size: 2.5rem;
+        text-align: left;
+        width: 28.8rem;
+        margin-bottom: 1.8rem;
+    }
+    .get-app__text {
+        @include mixins.text;
+        color: var(--gray-paragraph, #6C6C72);
+        font-size: 1.6rem;
+        margin-bottom: 4.1rem;
+    } 
+    .get-app__links {
+        display: flex;
+        gap: 2.5rem;
+    }
+    .get-app__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6.1rem;
+    }
+    .get-app__item {
+        width: 9.6rem;
+        height: 10rem;
+        border-radius: 0.5rem;
+        background: var(--Royal-blue, #5956E9);
+        box-shadow: 0rem 0.1rem 1rem 0rem rgba(0, 0, 0, 0.10);
+        padding: 1.1rem 0 1.2rem 0;
+    }
+    .get-app__icon{
+        width: 1.8rem;
+        height: 1.8rem;
+        display: block;
+        margin: 0 auto 0.8rem auto;
+    }
+    .get-app__number {
+        @include mixins.title;
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: -0.3rem;
+    }
+    .get-app__info {
+        @include mixins.text;
+        font-size: 1.6rem;
+        color: #fff;
+        text-align: center;
+    }
+    .get-app__image {
+        width: 33.5rem;
+        height: auto;
+        margin-top: 6rem;
+    }
+
+    @media(min-width: 768px) {
+        .get-app__wrapper {
+            @include mixins.wrapper-dt;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            padding-top: 16rem;
+            padding-bottom: 12rem;
+        }
+        .get-app__title {
+            font-size: 3.125rem;
+            font-weight: 700;
+        }
+        .get-app__image {
+            margin: 0 0 2rem 0;
+            object-fit: scale-down;
+        }
+    }
+    
+    @media(min-width: 1440px) {
+        .get-app__wrapper {
+        gap: 8rem;
+        }
+        .get-app__content {
+        width: 57rem;
+        margin: 0;
+        }
+        .get-app__item {
+        width: 17rem;
+        height: 17.6rem;
+        padding: 3rem 0 2rem;
+        }
+        .get-app__icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-bottom: 1.8rem;
+        }
+        .get-app__number {
+        font-size: 2.5rem;
+        margin-bottom: 1.8rem;
+        line-height: normal;
+        }
+        .get-app__info {
+        font-size: 2rem;
+        text-transform: uppercase;
+        }
+        .get-app__image {
+        margin: 0;
+        width: 51.6rem;
+        height: auto;
+        object-fit: contain;
+        }
+    }
+}
