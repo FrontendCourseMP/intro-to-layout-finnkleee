@@ -420,8 +420,7 @@ body {
 }
 
 .header__logo {
-  width: 100px;
-  height: 60px;
+  padding: 24px 11px;
   border-radius: 5px;
   background: var(--White, #FFF);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
@@ -432,8 +431,12 @@ body {
 
 @media (min-width: 768px) {
   .header__wrapper {
+    max-width: 104rem;
+    width: 100%;
+    margin: 0 auto;
     max-width: 688px;
     width: 100%;
+    height: 60px;
     margin-top: 69px;
     margin-left: 40px;
   }
@@ -621,10 +624,6 @@ body {
     margin-left: 74px;
   }
 }
-.logo__img {
-  padding: 24px 10px;
-}
-
 .nav {
   display: none;
 }
@@ -1440,6 +1439,7 @@ body {
 
 .review__content {
   display: flex;
+  overflow-x: hidden;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -1448,7 +1448,7 @@ body {
 .review__item {
   min-width: 343px;
   width: 343px;
-  height: 250px;
+  min-height: 250px;
   border-radius: 10px;
   background-color: #FFF;
   box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.24);
@@ -1458,7 +1458,8 @@ body {
 .review__item {
   position: relative;
   width: 343px;
-  height: 215px;
+  min-height: 250px;
+  height: 86%;
 }
 
 .review__item.review__item__active {
@@ -1467,7 +1468,8 @@ body {
   z-index: 2;
   top: 0;
   width: 343px;
-  height: 250px;
+  min-height: 250px;
+  height: 100%;
 }
 
 .review__ava {
@@ -1577,7 +1579,7 @@ body {
   border-radius: 50%;
 }
 
-input:checked ~ .circ::after .circ::after {
+.slider__radio:checked ~ .circ::after {
   content: "";
   display: block;
   position: absolute;
@@ -1590,7 +1592,6 @@ input:checked ~ .circ::after .circ::after {
   outline-style: solid;
   outline-color: #fff;
   border-radius: 100%;
-  display: none;
 }
 
 .slider__button {
@@ -1613,12 +1614,13 @@ input:checked ~ .circ::after .circ::after {
   .review__item {
     position: relative;
     width: 450px;
-    height: 210px;
+    min-height: 210px;
+    height: 84%;
   }
   .review__item.review__item__active {
     position: absolute;
     width: 450px;
-    height: 250px;
+    min-height: 250px;
     background-color: #FFF;
     z-index: 2;
     top: 0;
@@ -1685,11 +1687,12 @@ input:checked ~ .circ::after .circ::after {
   }
   .review__item.review__item__active {
     width: 770px;
-    height: 357px;
+    min-height: 357px;
   }
   .review__item {
     width: 570px;
-    height: 330px;
+    min-height: 330px;
+    height: 92%;
   }
 }
 .blog__wrapper {
@@ -2242,8 +2245,7 @@ input:checked ~ .circ::after .circ::after {
     padding: 17px 94px 16px 15px;
   }
   .news__button {
-    width: 52px;
-    left: 158px;
+    padding: 11px 13px;
     top: 14px;
     z-index: 3;
   }
