@@ -1,0 +1,81 @@
+main {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 250px 0;
+  }
+
+
+.header__contact{
+    background-color: var(--royal_blue, #5956E9);   
+}
+
+.registration {
+    width: 100%;
+    padding: 100px 20px;
+    margin: 0 auto;
+    max-width: 400px;
+    font-size: 2rem;
+}
+
+.registration__button {
+    color: var(--White, #FFF);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+    padding: 12px 12px;
+    display: block;
+    border-radius: 3px;
+    background: var(--Royal-blue, #5956E9);
+    margin-right: 3px;
+    transition: linear 0.2s;
+}
+
+.registration__button:hover {
+    color: #FFF;
+    box-shadow: -3px 3px #0f0f0f;
+    transform: translate(3px, -3px);
+}
+  
+.registration__button:active {
+    color: #FFF;
+    box-shadow: none;
+    transform: translate(0, 0);
+}
+.pseudo {
+    max-width: 1250px;
+    width: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+.pseudo__name {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.pseudo__name::first-letter {
+    text-align: center;
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    color: #5956E9;
+}
+.pseudo__opr {
+    font-size: 2rem;
+}
+.pseudo__opr::after {
+    content: "🛈";
+}
+.pseudo__list {
+    max-width: 500px;
+}
+.pseudo__item{
+    font-size: 18px;
+}
+.pseudo__label {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.pseudo__input:checked + span {
+    text-decoration: line-through;
+}

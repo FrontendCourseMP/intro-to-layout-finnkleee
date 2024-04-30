@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPOLY</title>
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__contact contact">
+                <div class="contact__links">
+                    <a href="" class="contact__link">
+                        <img src=".//images/mail-icon.svg" alt="" class="contact__image">
+                        <span class="contact__text">Info@youremail.com</span>
+                    </a>
+                    <a href="" class="contact__link">
+                        <img src=".//images/phone-icon.svg" alt="" class="contact__image">
+                        <span class="contact__text">(480) 555-0103</span>
+                    </a>
+                </div>
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src=".//images/social__facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src=".//images/social__instagram.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src=".//images/social__twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src=".//images/social__youtube.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="header__menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_145_69)">
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="currentColor"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_145_69">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                <span class="sr-only">
+                    Open menu
+                </span>
+            </button>
+            <nav class="header__navigation navigation_p1">
+                <a href="#" class="navigation_p1__item">
+                    Home
+                </a>
+                <a href="#about" class="navigation_p1__item">
+                    About
+                </a>
+                <a href="#features" class="navigation_p1__item">
+                    Features
+                </a>
+            </nav>
+            <a href="" class="header__logo logo">
+                <!-- <img src=".//images/logo.svg" alt="" class="logo__img"> -->
+                <img src=".//images/Logo4 1.svg" alt="" class="logo__img">
+            </a>
+            <nav class="header__navigation navigation_p2">
+                <a href="#how-to-use" class="navigation_p2__item">
+                    Screenshot
+                </a>
+                <a href="#blog" class="navigation_p2__item">
+                    Blog
+                </a>
+            </nav>
+            <a href="#" class="header__download">
+                Download
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <form action="//httpbin.org/post" method="post" class="main__registration registration">
+            <h2 class="form__title"> registration </h2>
+            <div class="registration__personal">
+                <div class="registration__name">
+                <label>
+                    <p> Name </p>
+                    <input type="text" name="name" value="" placeholder="Your name">
+                </label>
+                </div>
+                <div class="registration__birthdate">
+                    <p> Date of birth</p>
+                    <label>
+                        <input type="date" name="date">
+                    </label>
+                </div>
+                <div class="registration__sex">
+                    <p class="sex__title">Sex</p>
+                    <label class="sex__label">
+                        <input class="sex__input" type="radio" name="sex" value="woman">
+                        <span>Woman</span>
+                    </label>
+                    <label class="sex__label">
+                        <input class="sex__input" type="radio" name="sex" value="man">
+                        <span>Man</span>
+                    </label>
+                </div>
+                <div class="registration__password">
+                    <p>Password</p>
+                    <label class="password__label" for="password"> 
+                        <input class="password__input" type="password" name="password" id="password" value="">
+                    </label>
+                </div>
+            </div>
+            
+            <div class="registration__email">
+                <p> Send email</p>
+                <label class="email__label">
+                    <input class="mail__input" type="email" name="mail" value="" placeholder="Your email address">
+                </label>
+            </div>
+            <div class="registration__tel">
+                <p> Telephone </p>
+                <label class="tel__label">
+                    <input required class="tel__input" type="tel" name="tel" placeholder="Your telephone">
+                </label>
+            </div>
+            <div class="registration__time">
+                <p> Time </p>
+                <select name="time" class="time__list">
+                    <option class="time__item"  value="morning">morning</option>
+                    <option class="time__item" value="afternoon">afternoon</option>
+                    <option class="time__item" value="evening">evening</option>
+                </select>
+            </div>
+            <div class="form__buttons">
+                <button class="registration__button" type="submit">Send</button>
+                <button class="registration__button" type="reset">Resert</button>
+            </div>
+        </form>
+        <form action="#" class="pseudo">
+            <dl class="pseudo__list-opr">
+                <dt class="pseudo__name">
+                    Псевдоэлементы
+                </dt>
+                <dd class="pseudo__opr">
+                    Псевдоэлементы — это элементы, которых не существует в HTML-разметке. Они создаются и позиционируются исключительно при помощи CSS. Чаще всего используются для создания различных декоративных элементов (которые не несут содержательного смысла).
+                </dd>
+                <dt class="pseudo__name">
+                    Псевдоклассы
+                </dt>
+                <dd class="pseudo__opr">
+                    Псевдоклассы — особый вид селектора, который уточняет тип или состояние. Обычно это какой-то качественный признак: реакция на наведение курсора, порядок следования и другие.
+                </dd>
+            </dl>
+            <br>
+            <br>
+            <br>
+            <ul class="pseudo__list">
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input" checked>
+                        <span>::after</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>::cue</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input" checked>
+                        <span>::first-letter</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>::first-line</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>::selection</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>::slotted</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>::backdrop</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>::placeholder</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>::marker</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>::spelling-error (en-US)</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>::grammar-error</span>
+                    </label>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <ul class="pseudo__list">
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:optional</span>
+                    </label>
+                </li>
+              
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:only-of-type</span>
+                    </label>
+                </li>
+              
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:only-child</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:nth-of-type()</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:nth-last-of-type()</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input" checked>
+                        <span>:nth-last-child()</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:not()</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:left</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input checked">
+                        <span>:nth-child()</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:link</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:last-of-type</span>
+                    </label>
+                </li>
+        
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input" checked>
+                        <span>:active</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:visited</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:valid</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:target</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:scope (en-US)</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input" checked>
+                        <span>:root</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:right</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:required</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:read-write</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input" checked>
+                        <span>:read-only</span>
+                    </label>
+                </li>
+                
+                <li class="pseudo__item">
+                    <label  class="pseudo__label">
+                        <input type="checkbox" class="pseudo__input">
+                        <span>:out-of-range</span>
+                    </label>
+                </li>
+            </ul>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__social social">
+                <h3 class="social__title">Logo</h3>
+                <p class="social__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                </p>
+                <p class="social__text_v2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+                </p>
+                <ul class="social__list">
+                    <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src=".//images/footer_fb.svg" alt="facebook">
+                    </a>
+                    </li>
+                    <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src=".//images/social__instagram.svg" alt="instagram">
+                    </a>
+                    </li>
+                    <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src=".//images/social__twitter.svg" alt="twitter">
+                    </a>
+                    </li>
+                    <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src=".//images/social__youtube.svg" alt="youtube">
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__footlinks footlinks">
+                <h3 class="footlinks__title">
+                  quick link
+                </h3>
+                <ul class="footlinks__list">
+                  <li class="footlinks__item"><a href="#about" class="footlinks__link">About</a></li>
+                  <li class="footlinks__item"><a href="#features" class="footlinks__link">Features</a></li>
+                  <li class="footlinks__item"><a href="#how-to-use" class="footlinks__link">Screenshot</a></li>
+                  <li class="footlinks__item"><a href="#blog" class="footlinks__link">Blog</a></li>
+                </ul>
+              </div>
+              <div class="footer__news news">
+                <h3 class="news__title">
+                  news letter
+                </h3>
+                <p class="news__text">
+                  Subscribe our newsnews to get our latest
+                  update & news
+                </p>
+                <form action="#" method="post" class="news__form">
+                  <label class="news__label">
+                    <p class="sr-only">
+                        send email
+                    </p>
+                    <input class="news__input-text" type="email" name="mail" value="" placeholder="Your email address">
+                  </label>
+                  <button class="news__button" type="submit">
+                    <img src=".//images/send_button.svg" alt="send">
+                  </button>
+                </form>
+              </div>
+              <div class="copyright">
+                <img class="copyright__image" src="./images/copyright__img.svg" alt="copyright logo">
+                <p class="copyright__text">Copyright 2021 .Ojjomedia. All Right Reserved.</p>
+              </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
