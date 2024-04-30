@@ -1,12 +1,10 @@
 @use "../utils/mixins";
 
-.customers {
-    background: url(.//images/customers_back.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .customers__wrapper {
+    background: url("/images/customers_back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-bottom: 62px;
     padding-top: 60px;
 }

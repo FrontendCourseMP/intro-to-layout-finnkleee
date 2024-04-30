@@ -550,7 +550,7 @@ body {
 .hero {
   padding-top: 178px;
   padding-bottom: 113px;
-  background: url(".//images/hero_back.png");
+  background: url("/images/hero_back.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -635,7 +635,7 @@ body {
 
 @media (min-width: 768px) {
   .hero {
-    background: url(".//images/hero_back2.png");
+    background: url("/images/hero_back2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -812,7 +812,7 @@ body {
   }
 }
 .features {
-  background: url(.//images/features__bg.jpg), lightgray 50%/cover no-repeat;
+  background: url("/images/features__bg.jpg"), lightgray 50%/cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1487,13 +1487,10 @@ body {
     margin-bottom: 120px;
   }
 }
-.customers {
-  background: url(.//images/customers_back.png);
+.customers__wrapper {
+  background: url("/images/customers_back.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.customers__wrapper {
   padding-bottom: 62px;
   padding-top: 60px;
 }

@@ -5,7 +5,7 @@
 .hero {
   padding-top: 178px;
   padding-bottom: 113px;
-  background: url(".//images/hero_back.png");
+  background: url("/images/hero_back.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -103,7 +103,7 @@
 
 @media(min-width: 768px) {
   .hero{
-    background: url(".//images/hero_back2.png");
+    background: url("/images/hero_back2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
